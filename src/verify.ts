@@ -1,6 +1,7 @@
 import { Config } from "./types";
-export function verifyConfig(conf: Config): string[] {
+export function verifyConfig(conf: Config): string[] | undefined {
   const errors: string[] = [];
+
   Object.entries(conf.layers).forEach(([key, layer], idx) => {
     if (layer.typing.length !== conf.lens.length) {
       errors.push(
@@ -43,5 +44,15 @@ export function verifyConfig(conf: Config): string[] {
     }
   });
 
-  return errors;
+  return errors.length > 0 ? errors : undefined;
+}
+
+export function printErrors(errors: string[]) {
+  console.error("ERROR: Failed to verify config");
+  console.error(
+    `\nFound ${errors.length} error${errors.length === 1 ? "" : "s"}:`
+  );
+  errors.forEach((error, idx) => {
+    console.error(`\t${idx + 1}: ${error}`);
+  });
 }
