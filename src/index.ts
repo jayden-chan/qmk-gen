@@ -97,7 +97,7 @@ bool q_triggered = false;
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 \tswitch (keycode) {
-${genStringKeys(myConfig)}
+${genStringKeys(myConfig).trimEnd()}
 \tcase CU_QQ:
 \t\tif (record->event.pressed) {
 \t\t\tq_timer = timer_read();
