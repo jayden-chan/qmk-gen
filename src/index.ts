@@ -1,9 +1,10 @@
 export type Key = {
   code: string;
   label?: string[];
+  str?: string;
 };
 
-type KeyFunc = (l: string) => Key;
+type KeyFunc = (...l: string[]) => Key;
 
 type DZ60 = {
   layers: {
@@ -16,58 +17,43 @@ type DZ60 = {
 };
 
 const DZ60_lens = [14, 14, 13, 12, 8];
+const JPS: string = process.env.JPS as string;
+const SPS: string = process.env.SPS as string;
+const LPS: string = process.env.LPS as string;
 
 function main() {
   const myConfig: DZ60 = {
     layers: {
       Default: {
         typing: [
-          // prettier-ignore
-          [Tilde, K_1, K_2, K_3, K_4, K_5, K_6, K_7, K_8, K_9, K_0, Minus, Equals, Backspace],
-          // prettier-ignore
-          [Tab, Q, W, E, R, T, Y, U, I, O, P, LBracket, RBracket, Backslash],
-          // prettier-ignore
-          [Esc, A, S, D, F, G, H, J, K, L, Semicolon, Quote, Enter],
-          // prettier-ignore
-          [LShift, Z, X, C, V, B, N, M, Comma, Period, Slash, Up],
-          // prettier-ignore
-          [LCtrl, Super, Alt, Space, Fn("Default"), Left, Down, Right],
+          /* prettier-ignore */ [Tilde, K_1, K_2, K_3, K_4, K_5, K_6, K_7, K_8, K_9, K_0, Minus, Equals, Backspace],
+          /* prettier-ignore */ [Tab, Q, W, E, R, T, Y, U, I, O, P, LBracket, RBracket, Backslash],
+          /* prettier-ignore */ [Esc, A, S, D, F, G, H, J, K, L, Semicolon, Quote, Enter],
+          /* prettier-ignore */ [LShift, Z, X, C, V, B, N, M, Comma, Period, Slash, Up],
+          /* prettier-ignore */ [LCtrl, Super, Alt, Space, Fn("Default"), Left, Down, Right],
         ],
         fn: [
-          [F13, F1, F2, F3, F4, F5, F6, F7, F8, F9, F10, F11, F12, Delete],
-          // prettier-ignore
-          [Tns, Tns, Tns, Tns, Tns, Tns, Tns, Tns, Tns, Tns, MPP, MPrev, MNext, Reset],
-          // prettier-ignore
-          [Caps, Tns, Tns, Tns, Tns, Tns, Tns, BrUp, VolUp, PgUp, Home, End, Layer("CSGO")],
-          // prettier-ignore
-          [LShift, Tns, Tns, Tns, Tns, Tns, Tns, BrDn, VolDn, PgDn, Print, RShift],
-          // prettier-ignore
-          [Tns, Tns, Tns, MPP, Tns, F14, F15, RCtrl],
+          /* prettier-ignore */ [F13, F1, F2, F3, F4, F5, F6, F7, F8, F9, F10, F11, F12, Delete],
+          /* prettier-ignore */ [Str("JPS", JPS), Tns, Tns, Tns, Tns, Tns, Tns, Tns, Tns, Str("SPS", SPS), MPP, MPrev, MNext, Reset],
+          /* prettier-ignore */ [Caps, Tns, Tns, Tns, Tns, Tns, Tns, BrUp, VolUp, PgUp, Home, End, Layer("CSGO")],
+          /* prettier-ignore */ [Layer("Default"), Tns, Tns, Tns, Tns, Tns, Tns, BrDn, VolDn, PgDn, Print, RShift],
+          /* prettier-ignore */ [Tns, Tns, Str("LPS", LPS), MPP, Tns, F14, F15, RCtrl],
         ],
       },
       CSGO: {
         typing: [
-          // prettier-ignore
-          [Tilde, K_1, K_2, K_3, K_4, K_5, K_6, K_7, K_8, K_9, K_0, Minus, Equals, Backspace],
-          // prettier-ignore
-          [Tab, Q, W, E, R, T, Y, U, I, O, P, LBracket, RBracket, Backslash],
-          // prettier-ignore
-          [Esc, A, S, D, F, G, H, J, K, L, Semicolon, Quote, Enter],
-          // prettier-ignore
-          [LShift, Z, X, C, V, B, N, M, Comma, Period, Slash, Up],
-          // prettier-ignore
-          [LCtrl, Super, Alt, Space, Fn("Default"), Left, Down, Right],
+          /* prettier-ignore */ [Tilde, K_1, K_2, K_3, K_4, K_5, K_6, K_7, K_8, K_9, K_0, Minus, Equals, Backspace],
+          /* prettier-ignore */ [Tab, Custom("QQ"), W, E, R, T, Y, U, I, O, P, LBracket, RBracket, Backslash],
+          /* prettier-ignore */ [Esc, A, S, D, F, G, H, J, K, L, Semicolon, Quote, Enter],
+          /* prettier-ignore */ [LShift, Z, X, C, V, B, N, M, Comma, Period, Slash, Up],
+          /* prettier-ignore */ [LCtrl, Super, Alt, Space, Fn("CSGO"), Left, Down, Right],
         ],
         fn: [
-          [F13, F1, F2, F3, F4, F5, F6, F7, F8, F9, F10, F11, F12, Delete],
-          // prettier-ignore
-          [Tns, Tns, Tns, Tns, Tns, Tns, Tns, Tns, Tns, Tns, MPP, MPrev, MNext, Reset],
-          // prettier-ignore
-          [Caps, Tns, Tns, Tns, Tns, Tns, Tns, BrUp, VolUp, PgUp, Home, End, Layer("CSGO")],
-          // prettier-ignore
-          [LShift, Tns, Tns, Tns, Tns, Tns, Tns, BrDn, VolDn, PgDn, Print, RShift],
-          // prettier-ignore
-          [Tns, Tns, Tns, MPP, Tns, F14, F15, RCtrl],
+          /* prettier-ignore */ [F13, F1, F2, F3, F4, F5, F6, F7, F8, F9, F10, F11, F12, Delete],
+          /* prettier-ignore */ [Tns, Q, Tns, Tns, Tns, Tns, Tns, Tns, Tns, Ins, P7, P8, P9, Tns],
+          /* prettier-ignore */ [Tns, Tns, Tns, Tns, Tns, Tns, Tns, Tns, Tns, P4, P5, P6, Layer("Default")],
+          /* prettier-ignore */ [Layer("Default"), Tns, Tns, Tns, Tns, Tns, Tns, Tns, P1, P2, P3, P0],
+          /* prettier-ignore */ [Tns, Tns, Tns, Tns, Tns, PSlash, PAsterisk, PMinus],
         ],
       },
     },
@@ -86,21 +72,46 @@ function main() {
     return;
   }
 
-  const code = `#include QMK_KEYBOARD_H
+  const code = `/* clang-format off */
+#include QMK_KEYBOARD_H
 
 ${genLayerNumDefines(myConfig)}
+${genCustomKeyCodes(myConfig)}
+
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 \t/* Typing Layers */
-\t${Object.values(myConfig.layers)
-    .map((l) => genLayerCode(l.typing))
+\t${Object.entries(myConfig.layers)
+    .map(([name, l]) => genLayerCode(l.typing, name))
     .join(",\n\n\t")},
 
 \t/* Function Layers */
-\t${Object.values(myConfig.layers)
-    .map((l) => genLayerCode(l.fn))
+\t${Object.entries(myConfig.layers)
+    .map(([name, l]) => genLayerCode(l.fn, `${name}_FN`))
     .join(",\n\n\t")}
-};`;
+};
+
+#define QQ_DELAY 6
+uint16_t q_timer;
+bool q_triggered = false;
+
+bool process_record_user(uint16_t keycode, keyrecord_t *record) {
+\tswitch (keycode) {
+${genStringKeys(myConfig)}
+\tcase CU_QQ:
+\t\tif (record->event.pressed) {
+\t\t\tq_timer = timer_read();
+\t\t\tq_triggered = true;
+\t\t\tSEND_STRING("3");
+\t\t} else if (q_triggered) {
+\t\t\twhile (timer_elapsed(q_timer) < QQ_DELAY);
+\t\t\tq_triggered = false;
+\t\t\tSEND_STRING("q");
+\t\t}
+\t\tbreak;
+\t}
+\treturn true;
+}`;
 
   console.log(code);
 }
@@ -110,7 +121,7 @@ function genLayerNumDefines(conf: DZ60): string {
   return Object.keys(conf.layers).reduce(
     (prev: string, curr: string, idx: number) => {
       const layerUppercase = curr.toUpperCase();
-      return `${prev}#define ${layerUppercase} ${idx}\n#define ${layerUppercase}_FN ${
+      return `${prev}#define LYR_${layerUppercase} ${idx}\n#define LYR_${layerUppercase}_FN ${
         idx + numLayers
       }\n`;
     },
@@ -118,12 +129,52 @@ function genLayerNumDefines(conf: DZ60): string {
   );
 }
 
+function genCustomKeyCodes(conf: DZ60): string {
+  const customCodes = [
+    ...Object.values(conf.layers).reduce((acc, curr) => {
+      const checkRow = (row: Key[]) =>
+        row
+          .filter((key) => key.code.startsWith("CU"))
+          .map((key) => key.code)
+          .forEach((code) => acc.add(code));
+      curr.typing.forEach(checkRow);
+      curr.fn.forEach(checkRow);
+      return acc;
+    }, new Set()),
+  ];
+
+  return `enum custom_keycodes {\n\t${
+    customCodes[0]
+  } = SAFE_RANGE,\n${customCodes
+    .slice(1)
+    .map((c) => `\t${c}`)
+    .join(",\n")}\n};`;
+}
+
+function genStringKeys(conf: DZ60): string {
+  let ret = "";
+  const checkRow = (row: Key[]) =>
+    row.forEach((key) => {
+      if (key.str) {
+        ret += `\tcase ${key.code}:\n\t\tif (record->event.pressed) {\n\t\t\tSEND_STRING("${key.str}");\n\t\t}\n\t\tbreak;\n`;
+      }
+    });
+  Object.values(conf.layers).forEach((layer) => {
+    layer.typing.forEach(checkRow);
+    layer.fn.forEach(checkRow);
+  });
+
+  return ret;
+}
+
 function genRowCode(row: Key[]): string {
   return row.map((key) => key.code).join(", ");
 }
 
-function genLayerCode(layer: Key[][]): string {
-  return `LAYOUT_60_ansi(\n\t\t${layer.map(genRowCode).join(",\n\t\t")})`;
+function genLayerCode(layer: Key[][], layerName: string): string {
+  return `[LYR_${layerName.toUpperCase()}] = LAYOUT_60_ansi(\n\t\t${layer
+    .map(genRowCode)
+    .join(", \\\n\t\t")})`;
 }
 
 function verifyConfig(conf: DZ60): string[] {
@@ -172,28 +223,6 @@ function verifyConfig(conf: DZ60): string[] {
 
   return errors;
 }
-
-/*
-#include QMK_KEYBOARD_H
-
-const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
-
-LAYOUT_60_ansi(
-KC_GESC, KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_MINS, KC_EQL,           KC_BSPC,
-KC_TAB,           KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_LBRC, KC_RBRC, KC_BSLS,
-KC_CAPS,          KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_QUOT, KC_ENT,
-KC_LSFT,          KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH,          KC_RSFT,
-KC_LCTL, KC_LGUI,          KC_LALT,                   KC_SPC,                             KC_RALT, KC_RGUI,          MO(1),   KC_RCTL),
-
-LAYOUT_60_ansi(
-KC_GRV,  KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,           KC_DEL,
-KC_TRNS,          RGB_TOG, RGB_MOD, RGB_HUI, RGB_HUD, RGB_SAI, RGB_SAD, RGB_VAI, RGB_VAD, KC_TRNS, KC_PSCR, KC_SLCK, KC_PAUS, RESET,
-KC_TRNS,          KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_INS,  KC_HOME, KC_PGUP, KC_TRNS,
-KC_TRNS,          KC_TRNS, KC_TRNS, BL_DEC,  BL_TOGG, BL_INC,  BL_STEP, KC_TRNS, KC_DEL,  KC_END,  KC_PGDN,          KC_TRNS,
-KC_TRNS, KC_TRNS,          KC_TRNS,                   KC_TRNS,                            KC_TRNS, KC_TRNS,          KC_TRNS, KC_TRNS)
-};
-
- */
 
 const Esc = { code: "KC_ESC" };
 const A = { code: "KC_A" };
@@ -256,6 +285,16 @@ const F21 = { code: "KC_F21" };
 const F22 = { code: "KC_F22" };
 const F23 = { code: "KC_F23" };
 const F24 = { code: "KC_F24" };
+const P0 = { code: "KC_P0" };
+const P1 = { code: "KC_P1" };
+const P2 = { code: "KC_P2" };
+const P3 = { code: "KC_P3" };
+const P4 = { code: "KC_P4" };
+const P5 = { code: "KC_P5" };
+const P6 = { code: "KC_P6" };
+const P7 = { code: "KC_P7" };
+const P8 = { code: "KC_P8" };
+const P9 = { code: "KC_P9" };
 const Tab = { code: "KC_TAB" };
 const Tilde = { code: "KC_GRV", label: ["`", "~"] };
 const LShift = { code: "KC_LSFT" };
@@ -265,10 +304,6 @@ const RCtrl = { code: "KC_RCTL" };
 const Super = { code: "KC_LGUI" };
 const Alt = { code: "KC_LALT" };
 const Space = { code: "KC_SPC" };
-// prettier-ignore
-const Fn: KeyFunc = (l) => ({ code: `MO(${l.toUpperCase()}_FN)`, label: [`Fn (${l})`] });
-// prettier-ignore
-const Layer: KeyFunc = (l) => ({ code: `DF(${l.toUpperCase()})`, label: [`${l} layer`] });
 const Up = { code: "KC_UP" };
 const Down = { code: "KC_DOWN" };
 const Left = { code: "KC_LEFT" };
@@ -294,6 +329,7 @@ const MPP = { code: "KC_MPLY" };
 const Caps = { code: "KC_CAPS" };
 const Print = { code: "KC_PSCR" };
 const Home = { code: "KC_HOME" };
+const Ins = { code: "KC_INS" };
 const End = { code: "KC_END" };
 const PgUp = { code: "KC_PGUP" };
 const PgDn = { code: "KC_PGDN" };
@@ -301,5 +337,19 @@ const VolUp = { code: "KC_VOLU" };
 const VolDn = { code: "KC_VOLD" };
 const BrUp = { code: "KC_BRIU" };
 const BrDn = { code: "KC_BRID" };
+const PSlash = { code: "KC_PSLS" };
+const PAsterisk = { code: "KC_PAST" };
+const PMinus = { code: "KC_PMNS" };
+
+const Custom: KeyFunc = (c) => ({ code: `CU_${c}`, label: [c] });
+const Str: KeyFunc = (c, l) => ({ code: `CU_${c}`, label: [c], str: l });
+const Fn: KeyFunc = (l) => ({
+  code: `MO(LYR_${l.toUpperCase()}_FN)`,
+  label: [`Fn (${l})`],
+});
+const Layer: KeyFunc = (l) => ({
+  code: `DF(LYR_${l.toUpperCase()})`,
+  label: [`${l} layer`],
+});
 
 main();
