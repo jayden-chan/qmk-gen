@@ -1,7 +1,7 @@
 {
-  "name": "qmk_gen",
+  "name": "DZ60-gen",
   "version": "1.0.0",
-  "description": "QMK Keymap & Layout Image Generator",
+  "description": "DZ60 QMK Keymap & Layout Image Generator",
   "main": "./dist/index.js",
   "scripts": {
     "build": "tsc",

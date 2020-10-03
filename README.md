@@ -1,1 +1,1 @@
-# qmk_gen
+# DZ60 Keymap Generator
