@@ -13,14 +13,14 @@ export function renderSVG(config: Config): string {
 
   let svg = `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}">
-  <style>
-    .label { font: bold 40px Nimbus Sans; fill: white; }
-    .label-lg { font: bold 60px Nimbus Sans; fill: white; }
-    .layer { font: bold 100px Nimbus Sans; fill: black; }
-    .outer-key { fill: #000; stroke: white; stroke-width: 5 }
-    .inner-key { fill: #333; }
-  </style>
-  `;
+<style>
+  .label { font: bold 40px Nimbus Sans; fill: white; }
+  .label-lg { font: bold 60px Nimbus Sans; fill: white; }
+  .layer { font: bold 100px Nimbus Sans; fill: black; }
+  .outer-key { fill: #000; stroke: white; stroke-width: 5 }
+  .inner-key { fill: #333; }
+</style>
+`;
 
   Object.entries(config.layers).forEach(([name, layer], i) => {
     svg += renderLayer(layer.typing, wids, name, i * 2 * singleLayerHeight);
@@ -43,9 +43,9 @@ export function renderLayer(
   layerName: string,
   heightOffset: number
 ): string {
-  let ret = `  <text x="10" y="${
+  let ret = `<text x="10" y="${
     heightOffset + 110
-  }" class="layer">${layerName}</text>`;
+  }" class="layer">${layerName}</text>\n`;
 
   layer.forEach((row, i) => {
     let nextX = 0;
@@ -106,7 +106,7 @@ function getKey(
 
   return [outerSVG, innerSVG, label1SVG, label2SVG]
     .filter((l) => l.length > 0)
-    .map((l) => `  ${l}\n`)
+    .map((l) => l + "\n")
     .join("");
 }
 
