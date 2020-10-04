@@ -17,7 +17,7 @@ export function renderSVG(config: Config): string {
   .label { font: bold 40px Nimbus Sans; fill: white; }
   .label-lg { font: bold 60px Nimbus Sans; fill: white; }
   .layer { font: bold 100px Nimbus Sans; fill: black; }
-  .outer-key { fill: #000; stroke: white; stroke-width: 5 }
+  .outer-key { fill: #000; stroke: white; stroke-width: 3 }
   .inner-key { fill: #333; }
 </style>
 `;
@@ -79,10 +79,10 @@ function getKey(
   [x, y]: [number, number],
   className?: LabelClass
 ): string {
-  const bSize = BASE_KEY_SIZE * units;
+  const width = BASE_KEY_SIZE * units;
   // prettier-ignore
-  const innerSVG = `<rect x="${x + 17.5}" y="${y + 12.5}" rx="10" ry="10" width="${bSize - 35}" height="115" class="inner-key" />`
-  const outerSVG = `<rect x="${x}" y="${y}" rx="20" ry="20" width="${bSize}" height="${BASE_KEY_SIZE}" class="outer-key" />`;
+  const innerSVG = `<rect x="${x + 20}" y="${y + 12.5}" rx="10" ry="10" width="${width - 40}" height="110" class="inner-key" />`
+  const outerSVG = `<rect x="${x}" y="${y}" rx="20" ry="20" width="${width}" height="${BASE_KEY_SIZE}" class="outer-key" />`;
 
   label = label.map(htmlEscape);
 
