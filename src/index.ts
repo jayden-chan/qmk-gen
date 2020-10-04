@@ -4,8 +4,16 @@ import {Esc,A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,K_0,K_1,K_2,K_3,
 import { Config } from "./types";
 import { printErrors, verifyConfig } from "./verify";
 import { genCCode } from "./C_gen";
+import { renderLayer, renderSVG } from "./svg";
 
 const DZ60_lens = [14, 14, 13, 12, 8];
+const DZ60_wids_ANSI = [
+  [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2],
+  [1.5, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1.5],
+  [1.75, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2.25],
+  [2.25, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2.75],
+  [1.25, 1.25, 1.25, 6.25, 1.25, 1.25, 1.25, 1.25],
+];
 const JPS: string = process.env.JPS as string;
 const SPS: string = process.env.SPS as string;
 const LPS: string = process.env.LPS as string;
@@ -47,6 +55,7 @@ function main() {
       },
     },
     lens: DZ60_lens,
+    wids: DZ60_wids_ANSI,
   };
 
   const errors = verifyConfig(dz60Conf);
@@ -54,7 +63,12 @@ function main() {
     printErrors(errors);
     return;
   }
-  console.log(genCCode(dz60Conf));
+
+  if (process.argv[2] === "--svg") {
+    console.log(renderSVG(dz60Conf));
+  } else {
+    console.log(genCCode(dz60Conf));
+  }
 }
 
 main();

@@ -19,6 +19,20 @@ export function verifyConfig(conf: Config): string[] | undefined {
       );
     }
 
+    if (conf.wids.length !== conf.lens.length) {
+      errors.push("Lengths/Widths mismatch");
+    }
+
+    for (let i = 0; i < Math.min(conf.wids.length, conf.lens.length); i++) {
+      if (conf.wids[i].length !== conf.lens[i]) {
+        errors.push(
+          `Widths row ${i + 1} doesn't match lens row (expected ${
+            conf.lens[i]
+          }, actual ${conf.wids[i].length})`
+        );
+      }
+    }
+
     for (let i = 0; i < Math.min(layer.typing.length, conf.lens.length); i++) {
       if (layer.typing[i].length !== conf.lens[i]) {
         errors.push(
