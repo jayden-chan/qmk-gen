@@ -1,21 +1,24 @@
 import { Config, Key, LabelClass } from "./types";
 
+const BASE_KEY_SIZE = 150;
+
 export function renderSVG(config: Config): string {
   const numLayers = Object.keys(config.layers).length * 2;
   const { wids } = config;
 
-  const width = wids[0].reduce((acc, curr) => acc + curr, 0) * 150 + 50;
-  const singleLayerHeight = 150 * (wids.length + 1) + 50;
+  const width =
+    wids[0].reduce((acc, curr) => acc + curr, 0) * BASE_KEY_SIZE + 50;
+  const singleLayerHeight = BASE_KEY_SIZE * (wids.length + 1) + 50;
   const height = singleLayerHeight * numLayers;
 
   let svg = `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}">
   <style>
-    .label { font: bold 40px Nimbus Sans; fill: black; }
-    .label-lg { font: bold 60px Nimbus Sans; fill: black; }
+    .label { font: bold 40px Nimbus Sans; fill: white; }
+    .label-lg { font: bold 60px Nimbus Sans; fill: white; }
     .layer { font: bold 100px Nimbus Sans; fill: black; }
-    .outer-key { fill: #CCC; stroke: black; stroke-width: 5 }
-    .inner-key { fill: #FFF; }
+    .outer-key { fill: #000; stroke: white; stroke-width: 5 }
+    .inner-key { fill: #333; }
   </style>
   `;
 
@@ -24,7 +27,7 @@ export function renderSVG(config: Config): string {
     svg += renderLayer(
       layer.fn,
       wids,
-      `${name} (Fn)`,
+      `${name} (Fn Layer)`,
       (i * 2 + 1) * singleLayerHeight
     );
   });
@@ -50,11 +53,11 @@ export function renderLayer(
       ret += getKey(
         wids[i][j],
         getLabel(key),
-        [nextX, i * 150 + 150 + heightOffset],
+        [nextX, i * BASE_KEY_SIZE + 150 + heightOffset],
         key.cn
       );
 
-      nextX += wids[i][j] * 150;
+      nextX += wids[i][j] * BASE_KEY_SIZE;
     });
   });
 
@@ -71,25 +74,29 @@ function getLabel(key: Key): string[] {
 }
 
 function getKey(
-  size: number,
+  units: number,
   label: string[],
   [x, y]: [number, number],
   className?: LabelClass
 ): string {
-  const bSize = 150 * size;
+  const bSize = BASE_KEY_SIZE * units;
   // prettier-ignore
   const innerSVG = `<rect x="${x + 17.5}" y="${y + 12.5}" rx="10" ry="10" width="${bSize - 35}" height="115" class="inner-key" />`
-  const outerSVG = `<rect x="${x}" y="${y}" rx="20" ry="20" width="${bSize}" height="150" class="outer-key" />`;
+  const outerSVG = `<rect x="${x}" y="${y}" rx="20" ry="20" width="${bSize}" height="${BASE_KEY_SIZE}" class="outer-key" />`;
 
   label = label.map(htmlEscape);
 
   const label1SVG =
-    className === "lg"
-      ? `<text x="${x + 25}" y="${y + 75}" class="label-lg">${label[0]}</text>`
-      : `<text x="${x + 25}" y="${y + 55}" class="label">${label[0]}</text>`;
+    label.length > 0 && label[0].length > 0
+      ? className === "lg"
+        ? `<text x="${x + 25}" y="${y + 75}" class="label-lg">${
+            label[0]
+          }</text>`
+        : `<text x="${x + 25}" y="${y + 55}" class="label">${label[0]}</text>`
+      : "";
 
   const label2SVG =
-    label.length === 2
+    label.length > 1 && label[1].length > 0
       ? className === "lg"
         ? `<text x="${x + 25}" y="${y + 110}" class="label-lg">${
             label[1]
