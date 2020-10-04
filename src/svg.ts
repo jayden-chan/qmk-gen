@@ -14,6 +14,8 @@ export function renderSVG(config: Config): string {
     .label { font: bold 40px Nimbus Sans; fill: black; }
     .label-lg { font: bold 60px Nimbus Sans; fill: black; }
     .layer { font: bold 100px Nimbus Sans; fill: black; }
+    .outer-key { fill: #CCC; stroke: black; stroke-width: 5 }
+    .inner-key { fill: #FFF; }
   </style>
   `;
 
@@ -38,8 +40,8 @@ export function renderLayer(
   layerName: string,
   heightOffset: number
 ): string {
-  let ret = `<text x="10" y="${
-    heightOffset + 120
+  let ret = `  <text x="10" y="${
+    heightOffset + 110
   }" class="layer">${layerName}</text>`;
 
   layer.forEach((row, i) => {
@@ -74,11 +76,10 @@ function getKey(
   [x, y]: [number, number],
   className?: LabelClass
 ): string {
-  const bStyle = "stroke:black;stroke-width:5";
   const bSize = 150 * size;
   // prettier-ignore
-  const innerSVG = `<rect x="${x + 17.5}" y="${y + 12.5}" rx="10" ry="10" width="${bSize - 35}" height="115" style="fill:#FFF;" />`
-  const outerSVG = `<rect x="${x}" y="${y}" rx="20" ry="20" width="${bSize}" height="150" style="fill:#CCC;${bStyle}" />`;
+  const innerSVG = `<rect x="${x + 17.5}" y="${y + 12.5}" rx="10" ry="10" width="${bSize - 35}" height="115" class="inner-key" />`
+  const outerSVG = `<rect x="${x}" y="${y}" rx="20" ry="20" width="${bSize}" height="150" class="outer-key" />`;
 
   label = label.map(htmlEscape);
 
@@ -96,7 +97,10 @@ function getKey(
         : `<text x="${x + 25}" y="${y + 110}" class="label">${label[1]}</text>`
       : "";
 
-  return [outerSVG, innerSVG, label1SVG, label2SVG, ""].join("\n");
+  return [outerSVG, innerSVG, label1SVG, label2SVG]
+    .filter((l) => l.length > 0)
+    .map((l) => `  ${l}\n`)
+    .join("");
 }
 
 export function htmlEscape(text: string): string {

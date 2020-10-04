@@ -4,7 +4,7 @@ import {Esc,A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,K_0,K_1,K_2,K_3,
 import { Config } from "./types";
 import { printErrors, verifyConfig } from "./verify";
 import { genCCode } from "./C_gen";
-import { renderLayer, renderSVG } from "./svg";
+import { renderSVG } from "./svg";
 
 const DZ60_lens = [14, 14, 13, 12, 8];
 const DZ60_wids_ANSI = [
