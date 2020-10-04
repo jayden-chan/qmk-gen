@@ -1,14 +1,15 @@
 import { Config, Key, LabelClass } from "./types";
 
 const BASE_KEY_SIZE = 150;
+const MARGIN = 3;
 
 export function renderSVG(config: Config): string {
   const numLayers = Object.keys(config.layers).length * 2;
   const { wids } = config;
 
   const width =
-    wids[0].reduce((acc, curr) => acc + curr, 0) * BASE_KEY_SIZE + 50;
-  const singleLayerHeight = BASE_KEY_SIZE * (wids.length + 1) + 50;
+    wids[0].reduce((acc, curr) => acc + curr, 0) * BASE_KEY_SIZE + 2 * MARGIN;
+  const singleLayerHeight = BASE_KEY_SIZE * (wids.length + 1) + 2 * MARGIN;
   const height = singleLayerHeight * numLayers;
 
   let svg = `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
@@ -48,12 +49,12 @@ export function renderLayer(
   }" class="layer">${layerName}</text>\n`;
 
   layer.forEach((row, i) => {
-    let nextX = 0;
+    let nextX = MARGIN;
     row.forEach((key, j) => {
       ret += getKey(
         wids[i][j],
         getLabel(key),
-        [nextX, i * BASE_KEY_SIZE + 150 + heightOffset],
+        [nextX, i * BASE_KEY_SIZE + BASE_KEY_SIZE + heightOffset],
         key.cn
       );
 
