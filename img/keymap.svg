@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2300" height="1900">
+<style>
+  .label { font: bold 40px Nimbus Sans; fill: white; }
+  .label-lg { font: bold 60px Nimbus Sans; fill: white; }
+  .layer { font: bold 100px Nimbus Sans; fill: black; }
+  .outer-key { fill: #000; stroke: white; stroke-width: 3 }
+  .inner-key { fill: #333; }
+</style>
+<text x="10" y="110" class="layer">Default</text>
+<rect x="0" y="150" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="20" y="162.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<text x="25" y="225" class="label-lg">`</text>
+<text x="25" y="260" class="label-lg">~</text>
+<rect x="150" y="150" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="170" y="162.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<text x="175" y="205" class="label">1</text>
+<text x="175" y="260" class="label">!</text>
+<rect x="300" y="150" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="320" y="162.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<text x="325" y="205" class="label">2</text>
+<text x="325" y="260" class="label">@</text>
+<rect x="450" y="150" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="470" y="162.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<text x="475" y="205" class="label">3</text>
+<text x="475" y="260" class="label">#</text>
+<rect x="600" y="150" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="620" y="162.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<text x="625" y="205" class="label">4</text>
+<text x="625" y="260" class="label">$</text>
+<rect x="750" y="150" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="770" y="162.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<text x="775" y="205" class="label">5</text>
+<text x="775" y="260" class="label">%</text>
+<rect x="900" y="150" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="920" y="162.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<text x="925" y="205" class="label">6</text>
+<text x="925" y="260" class="label">^</text>
+<rect x="1050" y="150" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="1070" y="162.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<text x="1075" y="205" class="label">7</text>
+<text x="1075" y="260" class="label">&amp;</text>
+<rect x="1200" y="150" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="1220" y="162.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<text x="1225" y="205" class="label">8</text>
+<text x="1225" y="260" class="label">*</text>
+<rect x="1350" y="150" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="1370" y="162.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<text x="1375" y="205" class="label">9</text>
+<text x="1375" y="260" class="label">(</text>
+<rect x="1500" y="150" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="1520" y="162.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<text x="1525" y="205" class="label">0</text>
+<text x="1525" y="260" class="label">)</text>
+<rect x="1650" y="150" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="1670" y="162.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<text x="1675" y="205" class="label">-</text>
+<text x="1675" y="260" class="label">_</text>
+<rect x="1800" y="150" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="1820" y="162.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<text x="1825" y="205" class="label">=</text>
+<text x="1825" y="260" class="label">+</text>
+<rect x="1950" y="150" rx="20" ry="20" width="300" height="150" class="outer-key" />
+<rect x="1970" y="162.5" rx="10" ry="10" width="260" height="110" class="inner-key" />
+<text x="1975" y="205" class="label">Backspace</text>
+<rect x="0" y="300" rx="20" ry="20" width="225" height="150" class="outer-key" />
+<rect x="20" y="312.5" rx="10" ry="10" width="185" height="110" class="inner-key" />
+<text x="25" y="355" class="label">Tab</text>
+<rect x="225" y="300" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="245" y="312.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<text x="250" y="355" class="label">Q</text>
+<rect x="375" y="300" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="395" y="312.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<text x="400" y="355" class="label">W</text>
+<rect x="525" y="300" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="545" y="312.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<text x="550" y="355" class="label">E</text>
+<rect x="675" y="300" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="695" y="312.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<text x="700" y="355" class="label">R</text>
+<rect x="825" y="300" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="845" y="312.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<text x="850" y="355" class="label">T</text>
+<rect x="975" y="300" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="995" y="312.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<text x="1000" y="355" class="label">Y</text>
+<rect x="1125" y="300" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="1145" y="312.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<text x="1150" y="355" class="label">U</text>
+<rect x="1275" y="300" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="1295" y="312.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<text x="1300" y="355" class="label">I</text>
+<rect x="1425" y="300" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="1445" y="312.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<text x="1450" y="355" class="label">O</text>
+<rect x="1575" y="300" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="1595" y="312.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<text x="1600" y="355" class="label">P</text>
+<rect x="1725" y="300" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="1745" y="312.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<text x="1750" y="355" class="label">[</text>
+<text x="1750" y="410" class="label">{</text>
+<rect x="1875" y="300" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="1895" y="312.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<text x="1900" y="355" class="label">]</text>
+<text x="1900" y="410" class="label">}</text>
+<rect x="2025" y="300" rx="20" ry="20" width="225" height="150" class="outer-key" />
+<rect x="2045" y="312.5" rx="10" ry="10" width="185" height="110" class="inner-key" />
+<text x="2050" y="355" class="label">\</text>
+<text x="2050" y="410" class="label">|</text>
+<rect x="0" y="450" rx="20" ry="20" width="262.5" height="150" class="outer-key" />
+<rect x="20" y="462.5" rx="10" ry="10" width="222.5" height="110" class="inner-key" />
+<text x="25" y="505" class="label">Esc</text>
+<rect x="262.5" y="450" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="282.5" y="462.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<text x="287.5" y="505" class="label">A</text>
+<rect x="412.5" y="450" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="432.5" y="462.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<text x="437.5" y="505" class="label">S</text>
+<rect x="562.5" y="450" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="582.5" y="462.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<text x="587.5" y="505" class="label">D</text>
+<rect x="712.5" y="450" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="732.5" y="462.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<text x="737.5" y="505" class="label">F</text>
+<rect x="862.5" y="450" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="882.5" y="462.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<text x="887.5" y="505" class="label">G</text>
+<rect x="1012.5" y="450" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="1032.5" y="462.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<text x="1037.5" y="505" class="label">H</text>
+<rect x="1162.5" y="450" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="1182.5" y="462.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<text x="1187.5" y="505" class="label">J</text>
+<rect x="1312.5" y="450" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="1332.5" y="462.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<text x="1337.5" y="505" class="label">K</text>
+<rect x="1462.5" y="450" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="1482.5" y="462.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<text x="1487.5" y="505" class="label">L</text>
+<rect x="1612.5" y="450" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="1632.5" y="462.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<text x="1637.5" y="505" class="label">;</text>
+<text x="1637.5" y="560" class="label">:</text>
+<rect x="1762.5" y="450" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="1782.5" y="462.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<text x="1787.5" y="505" class="label">&#039;</text>
+<text x="1787.5" y="560" class="label">&quot;</text>
+<rect x="1912.5" y="450" rx="20" ry="20" width="337.5" height="150" class="outer-key" />
+<rect x="1932.5" y="462.5" rx="10" ry="10" width="297.5" height="110" class="inner-key" />
+<text x="1937.5" y="505" class="label">Return</text>
+<rect x="0" y="600" rx="20" ry="20" width="337.5" height="150" class="outer-key" />
+<rect x="20" y="612.5" rx="10" ry="10" width="297.5" height="110" class="inner-key" />
+<text x="25" y="655" class="label">Shift</text>
+<rect x="337.5" y="600" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="357.5" y="612.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<text x="362.5" y="655" class="label">Z</text>
+<rect x="487.5" y="600" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="507.5" y="612.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<text x="512.5" y="655" class="label">X</text>
+<rect x="637.5" y="600" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="657.5" y="612.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<text x="662.5" y="655" class="label">C</text>
+<rect x="787.5" y="600" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="807.5" y="612.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<text x="812.5" y="655" class="label">V</text>
+<rect x="937.5" y="600" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="957.5" y="612.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<text x="962.5" y="655" class="label">B</text>
+<rect x="1087.5" y="600" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="1107.5" y="612.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<text x="1112.5" y="655" class="label">N</text>
+<rect x="1237.5" y="600" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="1257.5" y="612.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<text x="1262.5" y="655" class="label">M</text>
+<rect x="1387.5" y="600" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="1407.5" y="612.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<text x="1412.5" y="655" class="label">,</text>
+<text x="1412.5" y="710" class="label">&lt;</text>
+<rect x="1537.5" y="600" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="1557.5" y="612.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<text x="1562.5" y="655" class="label">.</text>
+<text x="1562.5" y="710" class="label">&gt;</text>
+<rect x="1687.5" y="600" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="1707.5" y="612.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<text x="1712.5" y="655" class="label">/</text>
+<text x="1712.5" y="710" class="label">?</text>
+<rect x="1837.5" y="600" rx="20" ry="20" width="412.5" height="150" class="outer-key" />
+<rect x="1857.5" y="612.5" rx="10" ry="10" width="372.5" height="110" class="inner-key" />
+<text x="1862.5" y="675" class="label-lg">&#8593;</text>
+<rect x="0" y="750" rx="20" ry="20" width="187.5" height="150" class="outer-key" />
+<rect x="20" y="762.5" rx="10" ry="10" width="147.5" height="110" class="inner-key" />
+<text x="25" y="805" class="label">Ctrl</text>
+<rect x="187.5" y="750" rx="20" ry="20" width="187.5" height="150" class="outer-key" />
+<rect x="207.5" y="762.5" rx="10" ry="10" width="147.5" height="110" class="inner-key" />
+<text x="212.5" y="805" class="label">Super</text>
+<rect x="375" y="750" rx="20" ry="20" width="187.5" height="150" class="outer-key" />
+<rect x="395" y="762.5" rx="10" ry="10" width="147.5" height="110" class="inner-key" />
+<text x="400" y="805" class="label">Alt</text>
+<rect x="562.5" y="750" rx="20" ry="20" width="937.5" height="150" class="outer-key" />
+<rect x="582.5" y="762.5" rx="10" ry="10" width="897.5" height="110" class="inner-key" />
+<rect x="1500" y="750" rx="20" ry="20" width="187.5" height="150" class="outer-key" />
+<rect x="1520" y="762.5" rx="10" ry="10" width="147.5" height="110" class="inner-key" />
+<text x="1525" y="805" class="label">Fn</text>
+<rect x="1687.5" y="750" rx="20" ry="20" width="187.5" height="150" class="outer-key" />
+<rect x="1707.5" y="762.5" rx="10" ry="10" width="147.5" height="110" class="inner-key" />
+<text x="1712.5" y="825" class="label-lg">&#8592;</text>
+<rect x="1875" y="750" rx="20" ry="20" width="187.5" height="150" class="outer-key" />
+<rect x="1895" y="762.5" rx="10" ry="10" width="147.5" height="110" class="inner-key" />
+<text x="1900" y="825" class="label-lg">&#8595;</text>
+<rect x="2062.5" y="750" rx="20" ry="20" width="187.5" height="150" class="outer-key" />
+<rect x="2082.5" y="762.5" rx="10" ry="10" width="147.5" height="110" class="inner-key" />
+<text x="2087.5" y="825" class="label-lg">&#8594;</text>
+<text x="10" y="1060" class="layer">Default (Fn Layer)</text>
+<rect x="0" y="1100" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="20" y="1112.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<text x="25" y="1155" class="label">F13</text>
+<rect x="150" y="1100" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="170" y="1112.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<text x="175" y="1155" class="label">F1</text>
+<rect x="300" y="1100" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="320" y="1112.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<text x="325" y="1155" class="label">F2</text>
+<rect x="450" y="1100" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="470" y="1112.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<text x="475" y="1155" class="label">F3</text>
+<rect x="600" y="1100" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="620" y="1112.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<text x="625" y="1155" class="label">F4</text>
+<rect x="750" y="1100" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="770" y="1112.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<text x="775" y="1155" class="label">F5</text>
+<rect x="900" y="1100" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="920" y="1112.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<text x="925" y="1155" class="label">F6</text>
+<rect x="1050" y="1100" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="1070" y="1112.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<text x="1075" y="1155" class="label">F7</text>
+<rect x="1200" y="1100" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="1220" y="1112.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<text x="1225" y="1155" class="label">F8</text>
+<rect x="1350" y="1100" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="1370" y="1112.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<text x="1375" y="1155" class="label">F9</text>
+<rect x="1500" y="1100" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="1520" y="1112.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<text x="1525" y="1155" class="label">F10</text>
+<rect x="1650" y="1100" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="1670" y="1112.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<text x="1675" y="1155" class="label">F11</text>
+<rect x="1800" y="1100" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="1820" y="1112.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<text x="1825" y="1155" class="label">F12</text>
+<rect x="1950" y="1100" rx="20" ry="20" width="300" height="150" class="outer-key" />
+<rect x="1970" y="1112.5" rx="10" ry="10" width="260" height="110" class="inner-key" />
+<text x="1975" y="1155" class="label">Delete</text>
+<rect x="0" y="1250" rx="20" ry="20" width="225" height="150" class="outer-key" />
+<rect x="20" y="1262.5" rx="10" ry="10" width="185" height="110" class="inner-key" />
+<text x="25" y="1305" class="label">JPS</text>
+<rect x="225" y="1250" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="245" y="1262.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<rect x="375" y="1250" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="395" y="1262.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<rect x="525" y="1250" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="545" y="1262.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<rect x="675" y="1250" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="695" y="1262.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<rect x="825" y="1250" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="845" y="1262.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<rect x="975" y="1250" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="995" y="1262.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<rect x="1125" y="1250" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="1145" y="1262.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<rect x="1275" y="1250" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="1295" y="1262.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<rect x="1425" y="1250" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="1445" y="1262.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<text x="1450" y="1305" class="label">SPS</text>
+<rect x="1575" y="1250" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="1595" y="1262.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<text x="1600" y="1305" class="label">Play</text>
+<text x="1600" y="1360" class="label">Pause</text>
+<rect x="1725" y="1250" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="1745" y="1262.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<text x="1750" y="1305" class="label">Prev</text>
+<text x="1750" y="1360" class="label">track</text>
+<rect x="1875" y="1250" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="1895" y="1262.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<text x="1900" y="1305" class="label">Next</text>
+<text x="1900" y="1360" class="label">track</text>
+<rect x="2025" y="1250" rx="20" ry="20" width="225" height="150" class="outer-key" />
+<rect x="2045" y="1262.5" rx="10" ry="10" width="185" height="110" class="inner-key" />
+<text x="2050" y="1305" class="label">RESET</text>
+<rect x="0" y="1400" rx="20" ry="20" width="262.5" height="150" class="outer-key" />
+<rect x="20" y="1412.5" rx="10" ry="10" width="222.5" height="110" class="inner-key" />
+<text x="25" y="1455" class="label">Caps Lock</text>
+<rect x="262.5" y="1400" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="282.5" y="1412.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<rect x="412.5" y="1400" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="432.5" y="1412.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<rect x="562.5" y="1400" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="582.5" y="1412.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<rect x="712.5" y="1400" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="732.5" y="1412.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<rect x="862.5" y="1400" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="882.5" y="1412.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<rect x="1012.5" y="1400" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="1032.5" y="1412.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<rect x="1162.5" y="1400" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="1182.5" y="1412.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<text x="1187.5" y="1455" class="label">Bri+</text>
+<rect x="1312.5" y="1400" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="1332.5" y="1412.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<text x="1337.5" y="1455" class="label">Vol+</text>
+<rect x="1462.5" y="1400" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="1482.5" y="1412.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<text x="1487.5" y="1455" class="label">PgUp</text>
+<rect x="1612.5" y="1400" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="1632.5" y="1412.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<text x="1637.5" y="1455" class="label">Home</text>
+<rect x="1762.5" y="1400" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="1782.5" y="1412.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<text x="1787.5" y="1455" class="label">End</text>
+<rect x="1912.5" y="1400" rx="20" ry="20" width="337.5" height="150" class="outer-key" />
+<rect x="1932.5" y="1412.5" rx="10" ry="10" width="297.5" height="110" class="inner-key" />
+<text x="1937.5" y="1455" class="label">CSGO layer</text>
+<rect x="0" y="1550" rx="20" ry="20" width="337.5" height="150" class="outer-key" />
+<rect x="20" y="1562.5" rx="10" ry="10" width="297.5" height="110" class="inner-key" />
+<text x="25" y="1605" class="label">Default layer</text>
+<rect x="337.5" y="1550" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="357.5" y="1562.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<rect x="487.5" y="1550" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="507.5" y="1562.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<rect x="637.5" y="1550" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="657.5" y="1562.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<rect x="787.5" y="1550" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="807.5" y="1562.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<rect x="937.5" y="1550" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="957.5" y="1562.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<rect x="1087.5" y="1550" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="1107.5" y="1562.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<rect x="1237.5" y="1550" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="1257.5" y="1562.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<text x="1262.5" y="1605" class="label">Bri-</text>
+<rect x="1387.5" y="1550" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="1407.5" y="1562.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<text x="1412.5" y="1605" class="label">Vol-</text>
+<rect x="1537.5" y="1550" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="1557.5" y="1562.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<text x="1562.5" y="1605" class="label">PgDn</text>
+<rect x="1687.5" y="1550" rx="20" ry="20" width="150" height="150" class="outer-key" />
+<rect x="1707.5" y="1562.5" rx="10" ry="10" width="110" height="110" class="inner-key" />
+<text x="1712.5" y="1605" class="label">Print</text>
+<rect x="1837.5" y="1550" rx="20" ry="20" width="412.5" height="150" class="outer-key" />
+<rect x="1857.5" y="1562.5" rx="10" ry="10" width="372.5" height="110" class="inner-key" />
+<text x="1862.5" y="1605" class="label">Shift</text>
+<rect x="0" y="1700" rx="20" ry="20" width="187.5" height="150" class="outer-key" />
+<rect x="20" y="1712.5" rx="10" ry="10" width="147.5" height="110" class="inner-key" />
+<rect x="187.5" y="1700" rx="20" ry="20" width="187.5" height="150" class="outer-key" />
+<rect x="207.5" y="1712.5" rx="10" ry="10" width="147.5" height="110" class="inner-key" />
+<rect x="375" y="1700" rx="20" ry="20" width="187.5" height="150" class="outer-key" />
+<rect x="395" y="1712.5" rx="10" ry="10" width="147.5" height="110" class="inner-key" />
+<text x="400" y="1755" class="label">LPS</text>
+<rect x="562.5" y="1700" rx="20" ry="20" width="937.5" height="150" class="outer-key" />
+<rect x="582.5" y="1712.5" rx="10" ry="10" width="897.5" height="110" class="inner-key" />
+<text x="587.5" y="1755" class="label">Play</text>
+<text x="587.5" y="1810" class="label">Pause</text>
+<rect x="1500" y="1700" rx="20" ry="20" width="187.5" height="150" class="outer-key" />
+<rect x="1520" y="1712.5" rx="10" ry="10" width="147.5" height="110" class="inner-key" />
+<rect x="1687.5" y="1700" rx="20" ry="20" width="187.5" height="150" class="outer-key" />
+<rect x="1707.5" y="1712.5" rx="10" ry="10" width="147.5" height="110" class="inner-key" />
+<text x="1712.5" y="1755" class="label">F14</text>
+<rect x="1875" y="1700" rx="20" ry="20" width="187.5" height="150" class="outer-key" />
+<rect x="1895" y="1712.5" rx="10" ry="10" width="147.5" height="110" class="inner-key" />
+<text x="1900" y="1755" class="label">F15</text>
+<rect x="2062.5" y="1700" rx="20" ry="20" width="187.5" height="150" class="outer-key" />
+<rect x="2082.5" y="1712.5" rx="10" ry="10" width="147.5" height="110" class="inner-key" />
+<text x="2087.5" y="1755" class="label">Ctrl</text>
+</svg>
