@@ -15,7 +15,7 @@ export function renderSVG(config: Config): string {
   let svg = `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}">
 <style>
-  .label { font: bold 40px Nimbus Sans; fill: white; }
+  .label { font: bold 38px Nimbus Sans; fill: white; }
   .label-lg { font: bold 60px Nimbus Sans; fill: white; }
   .layer { font: bold 100px Nimbus Sans; fill: black; }
   .outer-key { fill: #000; stroke: white; stroke-width: 3 }
@@ -90,19 +90,19 @@ function getKey(
   const label1SVG =
     label.length > 0 && label[0].length > 0
       ? className === "lg"
-        ? `<text x="${x + 25}" y="${y + 75}" class="label-lg">${
+        ? `<text x="${x + 28}" y="${y + 73}" class="label-lg">${
             label[0]
           }</text>`
-        : `<text x="${x + 25}" y="${y + 55}" class="label">${label[0]}</text>`
+        : `<text x="${x + 28}" y="${y + 53}" class="label">${label[0]}</text>`
       : "";
 
   const label2SVG =
     label.length > 1 && label[1].length > 0
       ? className === "lg"
-        ? `<text x="${x + 25}" y="${y + 110}" class="label-lg">${
+        ? `<text x="${x + 28}" y="${y + 105}" class="label-lg">${
             label[1]
           }</text>`
-        : `<text x="${x + 25}" y="${y + 110}" class="label">${label[1]}</text>`
+        : `<text x="${x + 28}" y="${y + 105}" class="label">${label[1]}</text>`
       : "";
 
   return [outerSVG, innerSVG, label1SVG, label2SVG]
