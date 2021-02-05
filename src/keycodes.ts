@@ -113,9 +113,10 @@ export const VolUp = { code: "KC_VOLU", label: ["Vol+"] };
 export const VolDn = { code: "KC_VOLD", label: ["Vol-"] };
 export const BrUp = { code: "KC_BRIU", label: ["Bri+"] };
 export const BrDn = { code: "KC_BRID", label: ["Bri-"] };
-export const PSlash = { code: "KC_PSLS" };
-export const PAsterisk = { code: "KC_PAST" };
-export const PMinus = { code: "KC_PMNS" };
+export const PSlash = { code: "KC_KP_SLASH", label: ["KP /"] };
+export const PAsterisk = { code: "KC_KP_ASTERISK", label: ["KP *"] };
+export const PMinus = { code: "KC_KP_MINUS", label: ["KP -"] };
+export const PPlus = { code: "KC_KP_PLUS", label: ["KP +"] };
 
 export const Custom: KeyFunc = (c) => ({ code: `CU_${c}`, label: [c] });
 export const Str: KeyFunc = (c, l) => ({ code: `CU_${c}`, label: [c], str: l });
