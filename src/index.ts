@@ -57,16 +57,16 @@ function main() {
       GTAV: {
         typing: [
           /* prettier-ignore */ [Tilde, K_1, K_2, K_3, K_4, K_5, K_6, K_7, K_8, K_9, K_0, Minus, Equals, Backspace],
-          /* prettier-ignore */ [Tab, Q, W, E, R, T, Y, U, I, O, P7, P8, P9, PPlus],
+          /* prettier-ignore */ [Tab, Q, W, E, R, T, Y, U, I, O, P8, P7, P9, PPlus],
           /* prettier-ignore */ [Esc, A, S, D, F, G, H, J, K, P4, P5, P6, Enter],
-          /* prettier-ignore */ [LShift, Z, X, C, V, B, N, M, P1, P2, P3, Up],
+          /* prettier-ignore */ [LShift, Z, X, C, V, B, N, M, P1, P2, P3, P0],
           /* prettier-ignore */ [LCtrl, Super, Alt, Space, Fn("GTAV"), Left, Down, Right],
         ],
         fn: [
           /* prettier-ignore */ [F13, F1, F2, F3, F4, F5, F6, F7, F8, F9, F10, F11, F12, Delete],
           /* prettier-ignore */ [Tns, Tns, Tns, Tns, Tns, Tns, Tns, Tns, Tns, Tns, P, LBracket, RBracket, Backslash],
           /* prettier-ignore */ [Tns, Tns, Tns, Tns, Tns, Tns, Tns, Tns, Tns, L, Semicolon, Quote, Layer("Default")],
-          /* prettier-ignore */ [Layer("Default"), Tns, Tns, Tns, Tns, Tns, Tns, Tns, Comma, Period, Slash, P0],
+          /* prettier-ignore */ [Layer("Default"), Tns, Tns, Tns, Tns, Tns, Tns, Tns, Comma, Period, Slash, Up],
           /* prettier-ignore */ [Tns, Tns, Tns, Tns, Tns, PSlash, PAsterisk, PMinus],
         ],
       },
