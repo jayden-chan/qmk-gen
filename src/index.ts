@@ -16,8 +16,8 @@ const DZ60_wids_ANSI = [
 ];
 const JPS: string = process.env.JPS as string;
 const SPS: string = process.env.SPS as string;
-const LPS: string = process.env.LPS as string;
 const PPS: string = process.env.PPS as string;
+const OPS: string = process.env.OPS as string;
 
 function main() {
   const dz60Conf: Config = {
@@ -35,7 +35,7 @@ function main() {
           /* prettier-ignore */ [Str("JPS", JPS), Tns, Tns, Tns, Tns, Tns, Tns, Layer("GTAV"), Tns, Str("SPS", SPS), MPP, MPrev, MNext, Reset],
           /* prettier-ignore */ [Caps, Tns, Tns, Tns, Tns, Tns, Tns, BrUp, VolUp, PgUp, Home, End, Layer("CSGO")],
           /* prettier-ignore */ [Layer("Default"), Tns, Tns, Tns, Tns, Tns, Tns, BrDn, VolDn, PgDn, Print, RShift],
-          /* prettier-ignore */ [Str("PPS", PPS), Tns, Str("LPS", LPS), MPP, Tns, F14, F15, RCtrl],
+          /* prettier-ignore */ [Str("PPS", PPS), Str("OPS", OPS), Tns, MPP, Tns, F14, F15, RCtrl],
         ],
       },
       CSGO: {
