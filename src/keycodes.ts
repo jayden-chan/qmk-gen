@@ -97,7 +97,7 @@ export const Comma = { code: "KC_COMM", label: [",", "<"] };
 export const Period = { code: "KC_DOT", label: [".", ">"] };
 export const Slash = { code: "KC_SLSH", label: ["/", "?"] };
 export const Delete = { code: "KC_DEL", label: ["Delete"] };
-export const Tns = { code: "KC_TRNS", label: [""] };
+export const _ = { code: "KC_TRNS", label: [""] };
 export const Reset = { code: "RESET", label: ["RESET"] };
 export const MNext = { code: "KC_MNXT", label: ["Next", "track"] };
 export const MPrev = { code: "KC_MPRV", label: ["Prev", "track"] };
@@ -117,6 +117,9 @@ export const PSlash = { code: "KC_KP_SLASH", label: ["KP /"] };
 export const PAsterisk = { code: "KC_KP_ASTERISK", label: ["KP *"] };
 export const PMinus = { code: "KC_KP_MINUS", label: ["KP -"] };
 export const PPlus = { code: "KC_KP_PLUS", label: ["KP +"] };
+export const BLTogg = { code: "RGB_TOG", label: ["BLTogg"] };
+export const BLInc = { code: "RGB_VAI", label: ["BLStep"] };
+export const BLStep = { code: "RGB_MODE_FORWARD", label: ["BLInc"] };
 
 export const Custom: KeyFunc = (c) => ({ code: `CU_${c}`, label: [c] });
 export const Str: KeyFunc = (c, l) => ({ code: `CU_${c}`, label: [c], str: l });
