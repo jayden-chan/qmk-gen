@@ -2,3 +2,5 @@ dist
 node_modules
 *.swp
 *.env
+keymap.pdf
+keymap.svg
