@@ -51,7 +51,7 @@ function main() {
           /* prettier-ignore */ [Tns, Q, Tns, Tns, Tns, Tns, Tns, Tns, Tns, Ins, P7, P8, P9, Tns],
           /* prettier-ignore */ [Tns, Tns, Tns, Tns, Tns, Tns, Tns, Tns, Tns, P4, P5, P6, Layer("Default")],
           /* prettier-ignore */ [Layer("Default"), Tns, Tns, Tns, Tns, Tns, Tns, Tns, P1, P2, P3, P0],
-          /* prettier-ignore */ [Tns, Tns, Tns, Tns, Tns, PSlash, PAsterisk, PMinus],
+          /* prettier-ignore */ [Tns, Tns, Tns, MPP, Tns, PSlash, PAsterisk, PMinus],
         ],
       },
       GTAV: {
@@ -67,7 +67,7 @@ function main() {
           /* prettier-ignore */ [Tns, Tns, Tns, Tns, Tns, Tns, Tns, Tns, Tns, Tns, P, LBracket, RBracket, Backslash],
           /* prettier-ignore */ [Tns, Tns, Tns, Tns, Tns, Tns, Tns, Tns, Tns, L, Semicolon, Quote, Layer("Default")],
           /* prettier-ignore */ [Layer("Default"), Tns, Tns, Tns, Tns, Tns, Tns, Tns, Comma, Period, Slash, Up],
-          /* prettier-ignore */ [Tns, Tns, Tns, Tns, Tns, PSlash, PAsterisk, PMinus],
+          /* prettier-ignore */ [Tns, Tns, Tns, MPP, Tns, PSlash, PAsterisk, PMinus],
         ],
       },
     },
