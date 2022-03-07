@@ -1,5 +1,5 @@
 // prettier-ignore
-import {Esc,A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,K_0,K_1,K_2,K_3,K_4,K_5,K_6,K_7,K_8,K_9,F1,F2,F3,F4,F5,F6,F7,F8,F9,F10,F11,F12,F13,F14,F15,P0,P1,P2,P3,P4,P5,P6,P7,P8,P9,Tab,Tilde,LShift,RShift,LCtrl,RCtrl,Super,Alt,Space,Up,Down,Left,Right,Enter,Backslash,Backspace,Minus,Equals,LBracket,RBracket,Semicolon,Quote,Comma,Period,Slash,Delete,_,Reset,MNext,MPrev,MPP,Caps,Print,Home,Ins,End,PgUp,PgDn,VolUp,VolDn,BrUp,BrDn,PSlash,PAsterisk,PMinus,Fn,Str,Custom,Layer,PPlus,BLTogg,BLStep,BLInc} from "./keycodes";
+import {Esc,A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,K_0,K_1,K_2,K_3,K_4,K_5,K_6,K_7,K_8,K_9,F1,F2,F3,F4,F5,F6,F7,F8,F9,F10,F11,F12,F13,F14,F15,P0,P1,P2,P3,P4,P5,P6,P7,P8,P9,Tab,Tilde,LShift,RShift,LCtrl,RCtrl,Super,Alt,Space,Up,Down,Left,Right,Enter,Backslash,Backspace,Minus,Equals,LBracket,RBracket,Semicolon,Quote,Comma,Period,Slash,Delete,_,Reset,MNext,MPrev,MPP,Caps,Print,Home,Ins,End,PgUp,PgDn,VolUp,VolDn,BrUp,BrDn,PSlash,PAsterisk,PMinus,Fn,Str,Custom,Layer,PPlus,BLTogg,BLStep,BLInc,MacRec1,MacRec2,MacPly1,MacRecStop} from "./keycodes";
 
 import { Config } from "./types";
 import { printErrors, verifyConfig } from "./verify";
@@ -37,8 +37,8 @@ function main() {
         ],
         fn: [
           /* prettier-ignore */ [F13, F1, F2, F3, F4, F5, F6, F7, F8, F9, F10, F11, F12, Delete],
-          /* prettier-ignore */ [Str("JPS", JPS), BLTogg, BLStep, BLInc, _, _, _, Layer("GTAV"), _, Str("SPS", SPS), MPP, MPrev, MNext, Reset],
-          /* prettier-ignore */ [Caps, _, _, _, _, _, _, BrUp, VolUp, PgUp, Home, End, Layer("CSGO")],
+          /* prettier-ignore */ [Str("JPS", JPS), BLTogg, BLStep, BLInc, MacRec1, MacRec2, _, Layer("GTAV"), _, Str("SPS", SPS), MPP, MPrev, MNext, Reset],
+          /* prettier-ignore */ [Caps, MacPly1, MacRec2, MacRecStop, _, _, _, BrUp, VolUp, PgUp, Home, End, Layer("CSGO")],
           /* prettier-ignore */ [_, Layer("Default"), _, _, _, _, _, BrDn, VolDn, PgDn, Print, RShift],
           /* prettier-ignore */ [Str("PPS", PPS), Str("OPS", OPS), _, MPP, _, F14, F15, RCtrl],
         ],

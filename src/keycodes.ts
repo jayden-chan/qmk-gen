@@ -120,6 +120,11 @@ export const PPlus = { code: "KC_KP_PLUS", label: ["KP +"] };
 export const BLTogg = { code: "RGB_TOG", label: ["BLTogg"] };
 export const BLInc = { code: "RGB_VAI", label: ["BLStep"] };
 export const BLStep = { code: "RGB_MODE_FORWARD", label: ["BLInc"] };
+export const MacRec1 = { code: "DM_REC1", label: ["M1", "Rec"] };
+export const MacRec2 = { code: "DM_REC2", label: ["M2", "Rec"] };
+export const MacPly1 = { code: "DM_PLY1", label: ["M1", "Ply"] };
+export const MacPly2 = { code: "DM_PLY2", label: ["M2", "Ply"] };
+export const MacRecStop = { code: "DM_RSTP", label: ["Rec", "Stop"] };
 
 export const Custom: KeyFunc = (c) => ({ code: `CU_${c}`, label: [c] });
 export const Str: KeyFunc = (c, l) => ({ code: `CU_${c}`, label: [c], str: l });
